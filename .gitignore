@@ -1,0 +1,12 @@
+.dockerignore
+
+*.crt
+*.pem
+*.key
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+

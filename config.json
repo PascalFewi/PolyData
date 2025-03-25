@@ -1,0 +1,26 @@
+{
+    "spaces": {
+        "connection_retries": 5,
+        "backoff_factor": 2,
+        "upload_window_s": 120
+    },
+    "api": {
+        "gamma_markets_base_url": "https://gamma-api.polymarket.com/markets?limit=100&order=id&closed=false",
+        "clob_orderbook_base_url": "https://clob.polymarket.com/book?",
+        "gamma_markets_fetch_retries": 2,
+        "clob_orderbook_fetch_retries": 2
+    },
+    "files": {
+        "storage_dir": "./orderbooks/",
+        "index_file": "./file_index.json"
+    },
+    "intervals": {
+        "market_fetch_interval_min": 60,
+        "update_interval_s": 15
+    },
+    "logging": {
+        "log_file": "polymarket.log",
+        "log_level": "INFO",
+        "log_format": "%(asctime)s - %(levelname)s - %(message)s"
+    }
+}
